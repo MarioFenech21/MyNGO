@@ -1,0 +1,81 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SCREENALT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Menu">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="623dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Account Button -->
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TEXTTITLE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Menu"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="299dp" />
+
+        <Button
+            android:id="@+id/accountButton"
+            style="@style/BUTTON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="redirectToAccountDetails"
+            android:text="Account" />
+
+        <!-- Website Button -->
+        <Button
+            android:id="@+id/websiteButton"
+            style="@style/BUTTON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="redirectToWebsite"
+            android:text="Website" />
+
+        <!-- Settings Button -->
+        <Button
+            android:id="@+id/settingsButton"
+            style="@style/BUTTON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="redirectToSettings"
+            android:text="Settings" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/footerTextView"
+        style="@style/TEXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Made by Mario Fenech 0457203L CIS2208"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="bottom|center" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

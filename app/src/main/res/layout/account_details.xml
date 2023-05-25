@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    style="@style/SCREENALT"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/user_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#52D9DA"
+        android:elevation="4dp"
+        android:theme="@style/TEXT" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/blankprofile"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <TextView
+        android:id="@+id/user_details"
+        style="@style/TEXTTITLE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/logout"
+        style="@style/BUTTON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

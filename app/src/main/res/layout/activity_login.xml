@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <LinearLayout
+        style="@style/SCREEN"
+        android:layout_width="416dp"
+        android:layout_height="732dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:layout_editor_absoluteY="-4dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TEXTTITLE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:textSize="10pt" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsername"
+            style="@style/TEXT"
+            android:layout_width="367dp"
+            android:layout_height="58dp"
+            android:hint="Username or Email" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            style="@style/TEXT"
+            android:layout_width="367dp"
+            android:layout_height="58dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/BUTTON"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Log In" />
+
+        <TextView
+            android:id="@+id/textViewRegister"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register here" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

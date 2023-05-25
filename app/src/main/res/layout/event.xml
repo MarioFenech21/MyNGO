@@ -1,0 +1,35 @@
+<!-- events.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <!-- TextView to display event title -->
+    <TextView
+        android:id="@+id/eventTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="@font/muktasemibold" />
+
+    <!-- TextView to display event time -->
+    <TextView
+        android:id="@+id/eventTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="@font/muktaregular"/>
+
+    <!-- Button for getting event-->
+    <Button
+        android:id="@+id/eventsDetailsButton"
+        style="@style/BUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="See Event Details"
+        android:fontFamily="@font/muktamedium" />
+
+</LinearLayout>

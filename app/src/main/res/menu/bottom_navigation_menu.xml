@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/action_home"
+        android:icon="@drawable/home" />
+
+    <item
+        android:id="@+id/action_about_us"
+        android:title="@string/action_about_us"
+        android:icon="@drawable/info" />
+
+    <item
+        android:id="@+id/action_events"
+        android:title="@string/action_events"
+        android:icon="@drawable/calendar" />
+
+    <item
+        android:id="@+id/action_menu"
+        android:title="@string/action_menu"
+        android:icon="@drawable/list" />
+    <!-- Add more menu items as needed -->
+</menu>

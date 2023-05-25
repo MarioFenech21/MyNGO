@@ -1,0 +1,40 @@
+<!-- settings_view.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/user_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/TOOLBAR" />
+
+    <TextView
+        style="@style/TEXTTITLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:layout_marginLeft="4pt"
+        android:text="Dark Mode"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/darkModeSwitch"
+        style="@style/TEXT"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6pt"
+        android:padding="4dp"
+        android:text="Enable Dark Mode"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
